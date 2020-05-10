@@ -57,7 +57,7 @@ function ingat(){
   if(jam > 11){
     waktu = "SIANG sayang"
   }
-  if(jam > 15){
+  if(jam > 14){
     waktu = "SEKARANG MENJELANG SORE YA?"
   }
   if(jam > 16){
@@ -73,7 +73,7 @@ function ingat(){
     waktu = "MALAM CINTUUU"
   }
   if(jam > 22){
-    waktu = "BELUM TIDUR?, PASTI LAGI MIKIIRIN AKU"
+    waktu = "BELUM TIDUR?, PASTI LAGI MIKIIRIN GW, ASEEEK"
   }
 
 
@@ -89,24 +89,24 @@ document.getElementById("mtk").innerHTML = dafa
 
 const quotes = [
   {
-    "quote": "MAU BUKEBER GAK?",
-    "source": "ALUMNI 9B"
+    "quote": "TERUSLAH BERNAFAS",
+    "source": "Jekalahunagakguna"
   },
   {
-    "quote": "Mau kumpul gak?",
-    "source": "Alumni 9B"
+    "quote": "Teruslah hidup walau tak beruna",
+    "source": "Nemu di beranda"
   },
   {
-    "quote": "Mau maen gak?",
-    "source": "Alumni 9b"
+    "quote": "Jangan pernah Menyerah",
+    "source": "Semua orang"
   },
   {
-    "quote": "ayolah...",
-    "source": "Alumni 9b"
+    "quote": "Bila kau lihat kekiri maka kau akan melewatkan yang kanan",
+    "source": "Patrick star"
   },
   {
-    "quote": "Code gw cari sendiri no copas",
-    "source": "dafa"
+    "quote": "Jangan  malas",
+    "source": "Guru"
   },
 ]
 
@@ -117,3 +117,25 @@ function randomQuote(){
 }
 
 setInterval(randomQuote, 2000);
+
+var c = 0;
+function pop(){
+  if(c == 0){
+  document.getElementById('credit').style.display = "block"
+  c = 1
+  }
+  else{
+    document.getElementById('credit').style.display = "none"
+    c = 0
+  }
+}
+function musik(){
+  if(c == 0){
+  document.getElementById('putar').style.display = "block"
+  c = 1
+  }
+  else{
+    document.getElementById('putar').style.display = "none"
+    c = 0
+  }
+}
